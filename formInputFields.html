@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="input.css">
+  <script defer src="addEventListener.js"></script>
+  <title>Basic Input types</title>
+</head>
+
+<body>
+  <form class="form" onsubmit="save(event);return false">
+      <header class="headerContainer">
+        HTML 5 Form Input Elements
+      </header>
+      <div>
+        <label  for="name">text Input type for Name: </label>
+        <input  type="text" id="text" name="text" />
+        <error-output class="text-error text-error-name"></error-output>
+      </div>
+      <div>
+        <label for="pwd">password input type: </label>
+        <input type="password" id="pwd" name="pwd" />
+        <error-output class="text-error text-error-pwd"></error-output>
+      </div>
+      <div>
+        <label for="email">email input typez: </label>
+        <input type="email" id="email" name="email" />
+        <error-output class="text-error text-error-email"></error-output>
+      </div>
+      <div>
+        <label for="url">url input typez: </label>
+        <input type="url" id="url" name="url" />
+      </div>
+      <div>
+        <label for="number">number input typez: </label>
+        <input type="number" id="number" name="number" />
+      </div>
+      <div>
+        <label for="tel">tel input typez: </label>
+        <input type="tel" id="tel" name="tel" />
+        <error-output class="text-error text-error-tel"></error-output>
+      </div>
+      <div>
+        <label for="search">search input typez: </label>
+        <input type="search" id="search" name="search" />
+      </div>
+      <div class="nativeDateTimePicker">
+        <label for="party">Choose a date and time: </label>
+        <input type="datetime-local" id="party" name="bday" />
+        <span class="validity"></span>
+      </div>
+      <div>
+        <label for="salary">Choose your salary: </label>
+        <input type="range" id="salary" name="salary" min="30000" max="500000" value="400000" step="100" />
+      </div>
+      <div style="display: flex; justify-content: center;">
+       <button type="submit">Submit</button>
+      </div>
+  </form>
+<body>
